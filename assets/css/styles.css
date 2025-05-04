@@ -363,3 +363,120 @@ a{
     font-weight: 400;
     line-height: 1;
 }
+
+/* How it's work */
+.how-it-works{
+    margin-top: 160px;
+}
+
+.how-it-works__inner{
+    display: flex;
+    column-gap: 130px;
+}
+
+.how-it-works__media{
+    position: relative;
+    min-width: 570px;
+    min-height: 619px;
+}
+
+.how-it-works__content{
+    padding-top: 29px;
+}
+
+.how-it-works__wrap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 470px;
+    object-fit: cover;
+}
+
+.how-it-works__thumb{
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.how-it-works__decor-01{
+    position: absolute;
+    top: 75px;
+    right: 156px;
+}
+
+.how-it-works__decor-02{
+    position: absolute;
+    bottom: 96px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    width: 226px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #FFFDFA;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+    z-index: 1;
+}
+
+.how-it-works__decor-02--icon{
+    margin-right: 10px;
+}
+
+.how-it-works__decor-02--content--bold{
+    display: block;
+    margin-bottom: 5px;
+    color: #212832;
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.how-it-works__decor-02--content--normal{
+    color: #696D76;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.how-it-works__sub-title{
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    color: #696D77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.how-it-works__sub-title::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696D77;
+}
+
+.how-it-works__heading{
+    margin-bottom: 70px;
+}
+
+.how-it-works__list{
+    margin-bottom: 30px;
+}
+
+.how-it-works__title{
+    margin-bottom: 16px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
+}
