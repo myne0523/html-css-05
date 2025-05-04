@@ -1,0 +1,365 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --height:52px;
+    --primary-heading-color:#212832;
+    --primary-desc-color:#696D76;
+    --primary-color-btn:#212832;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    background: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Open Sans", sans-serif;
+}
+
+input, textarea, select, button{
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.container{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+input, textarea, select, button{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Common */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    display: inline-block;
+    min-width: 113px;
+    height: var(--height);
+    padding: 0 20px;
+    border-radius: 8px;
+    border: 1px solid #212832;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: var(--height);
+    color: #FFFFFF;
+    background: var(--primary-color-btn);
+}
+
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-heading{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: var(--primary-heading-color);
+}
+
+.section-desc{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    color: var(--primary-desc-color);
+}
+
+
+.control{
+    display: flex;
+    column-gap: 18px;
+}
+
+.control__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #FFD1C4;
+    outline:none;
+    color: #FF5B2E;
+    background: transparent;
+    transition: .25s;
+}
+
+.control__btn:hover{
+    color: #FFFFFF;
+    border-color: #FF5B2E;
+    background: #FF5B2E;
+    cursor: pointer;
+}
+
+/* Header */
+.header{
+    padding-top: 54px;
+}
+
+/* Header menu */
+.header__inner{
+    position: sticky;
+    display: flex;
+    align-items:center ;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.navbar__list{
+    margin-left: 70px;
+    display: flex;
+}
+
+.navbar__link{
+    padding: 8px 18px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5E6085;
+}
+
+.navbar__link:hover,
+.navbar__link--active{
+    color: var(--primary-heading-color);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header-action{
+    margin-left: auto;
+}
+
+.header-action__link{
+    padding-right:56px ;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #212832;
+}
+
+.header-action__signup{
+    margin-left: auto;
+    min-width: 117px;
+}
+
+/* Hero */
+.hero{
+    margin-top: 88px;
+}
+
+.hero__inner{
+    display: flex;
+    column-gap: 60px;
+}
+
+.hero__content{
+    width: 540px;
+}
+
+.hero__media{
+    position: relative;
+    width: 630px;
+    min-height: 562px;
+}
+
+.hero__sub-title{
+    padding-left: 31px;
+    position: relative;
+    color: #696D77;
+    font: size 1.6rem;;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.hero__sub-title::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696D77;
+}
+
+.hero__heading{
+    margin-bottom: 20px;
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.hero__heading--violet{
+    color: #7264D6;
+}
+
+.hero__desc{
+    margin-bottom: 40px;
+}
+
+.subscribe-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 74px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.subscribe-form__input{
+    width: 100%;
+    height: 100%;
+    padding: 0 23px;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+
+.subscribe-form__input::placeholder{
+    color: #696D76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.subscribe-form__submit{
+    min-height: 58px;
+    min-width: 149px;
+    border-radius: 8px;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    border: none;
+    outline: none;
+    background: #7264D6;
+    transition: all .25s ease;
+}
+
+.subscribe-form__submit:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.hero__note{
+    color: #696D76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.hero__thumb{
+    position: absolute;
+    left: 100px;
+    width: 296px;
+    height: 562px;
+    object-fit: cover;
+}
+
+.hero-decor-box-01 {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    left: 0;
+    top: 113px;
+    z-index: 1;
+}
+
+.hero-decor__icon-01 {
+    margin-right: 8px;
+}
+
+.hero-decor-01__text {
+    color: #31456A;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.hero-decor-01__value {
+    color: #4AB5E3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.hero-decor-circle{
+    position: absolute;
+    right: 0;
+    top: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #DA6464;
+    text-align: center;
+}
+
+.hero-decor-02__value{
+    color: #FFF;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-decor-02__text{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero-decor-box-02{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #439F90;
+    position: absolute;
+    right: 90px;
+    bottom: 60px;
+    z-index: 1;
+}
+
+.hero-decor-03__value{
+    margin-bottom: 5px;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.hero-decor-03__text{
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+}
