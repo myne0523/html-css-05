@@ -960,3 +960,105 @@ a{
 .blog__card:hover .card__link{
     color: #7264D6;
 }
+
+/* App */
+.app{
+    margin-top: 160px;
+}
+
+.app__inner{
+    position: relative;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 24px;
+    background: #7264D6;
+}
+
+.app-top{
+    margin-bottom: 38px;
+}
+
+.app__sub-title{
+    display: inline-block;
+    position: relative;
+    color: #FFF;
+    margin-bottom: 12px;
+    padding-left: 30px;
+}
+
+.app__sub-title::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #FFF;
+}
+
+.app__heading{
+    color: #FFF;
+    margin-bottom: 18px;
+}
+
+.app__desc{
+    width: 435px;
+    color: #FFF;
+}
+
+.app__thumb-wrap{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    width: 182px;
+    height: 64px;
+    border-radius: 6px;
+    background: #FFF;
+    text-align: left;
+}
+
+.app-bottom{
+    display: flex;
+    column-gap: 16px;
+}
+
+.app__cta--small{
+    margin-bottom: 4px;
+    font-size: 1.2rem;
+}
+
+.app__cta--large{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.star-01{
+    position: absolute;
+    left: 112px;
+    top: 49px;
+}
+
+.star-02{
+    position: absolute;
+    bottom: 49px;
+    left: 166px;
+}
+
+.star-03{
+    position: absolute;
+    top: 49px;
+    right: 112px;
+}
+
+.star-04{
+    position: absolute;
+    bottom: 49px;
+    right: 166px;
+}
