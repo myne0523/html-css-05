@@ -109,11 +109,17 @@ a{
 /* Header */
 .header{
     padding-top: 54px;
+    background: #FFF;
+}
+
+.header.fixed{
+    position: sticky;
+    top: -28px;
+    z-index: 2;
 }
 
 /* Header menu */
 .header__inner{
-    position: sticky;
     display: flex;
     align-items:center ;
 }
